@@ -39,7 +39,7 @@ Most of what's on this profile is side projects. I learn best by rebuilding thin
 
 Lately I'm spending more time on the backend and the ops side, picking up NestJS, Docker, Nginx and a bit of Grafana, because I got tired of building something and then waiting on someone else to ship it.
 
-I speak Uzbek and Russian, and enough English to read docs and get by. Telegram is the fastest way to reach me.
+I speak Uzbek and Russian, and I'm fluent in English. Telegram is the fastest way to reach me.
 
 <br/>
 
