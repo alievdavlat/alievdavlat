@@ -33,11 +33,11 @@
 <!-- ====================== ABOUT ====================== -->
 ## 👋 About me
 
-I'm a full-stack web developer in Tashkent. I've been at it seriously since late 2023, when I joined Nova Studio and spent most of my time building CRMs and company websites with React, Next.js, Node and Strapi. That job is also where I learned React Native, mostly by getting thrown at it.
+I'm a full-stack web developer in Tashkent. I've been doing this professionally since late 2023, and right now I'm at NewProWeb, mostly building CRMs and company websites with React, Next.js, Node and Strapi. That kind of work is also where I got into React Native, mostly by getting thrown at it.
 
-Most of what's on this profile is side projects. I learn best by rebuilding things I already use, so there's a Notion clone, a code snippet manager, and a YouTube-style app in here. Some of them aren't finished, and that's fine. I usually keep going until the part I was curious about clicks, then move on to the next idea.
+Most of what's on this profile is side projects. I learn best by rebuilding things I already use, so there's a Notion clone, a code snippet manager, and a YouTube-style app in here. A few of them aren't finished, and the honest reason is that work usually has me on other projects, so the side stuff gets picked up and put down between deadlines. I tend to push until the part I was curious about clicks, then move on.
 
-Right now I'm spending more time on the backend and the ops side, picking up NestJS, Docker, Nginx and a bit of Grafana, because I got tired of building something and then waiting on someone else to ship it.
+Lately I'm spending more time on the backend and the ops side, picking up NestJS, Docker, Nginx and a bit of Grafana, because I got tired of building something and then waiting on someone else to ship it.
 
 I speak Uzbek and Russian, and enough English to read docs and get by. Telegram is the fastest way to reach me.
 
