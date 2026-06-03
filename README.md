@@ -33,16 +33,13 @@
 <!-- ====================== ABOUT ====================== -->
 ## 👋 About me
 
-I'm a full-stack web developer based in Tashkent. I started at Nova Studio in late 2023, building CRM systems and corporate sites with React, Next.js, Node and Strapi. That's also where I picked up React Native. Outside of work I build side projects to try the things my day job doesn't reach, usually by cloning an app I like and seeing how far I can get.
+I'm a full-stack web developer in Tashkent. I've been at it seriously since late 2023, when I joined Nova Studio and spent most of my time building CRMs and company websites with React, Next.js, Node and Strapi. That job is also where I learned React Native, mostly by getting thrown at it.
 
-A few things about how I work:
+Most of what's on this profile is side projects. I learn best by rebuilding things I already use, so there's a Notion clone, a code snippet manager, and a YouTube-style app in here. Some of them aren't finished, and that's fine. I usually keep going until the part I was curious about clicks, then move on to the next idea.
 
-- I like owning a feature from the database all the way to the UI.
-- I care about how an interface feels, so GSAP, Framer Motion and a bit of Three.js end up in most of my projects.
-- Lately I've been learning the ops side: Docker, Nginx, and a little Grafana for monitoring.
-- Languages: Uzbek (native), Russian (B2), English (still improving).
+Right now I'm spending more time on the backend and the ops side, picking up NestJS, Docker, Nginx and a bit of Grafana, because I got tired of building something and then waiting on someone else to ship it.
 
-If you want to talk React, Next.js, NestJS or React Native, I'm around.
+I speak Uzbek and Russian, and enough English to read docs and get by. Telegram is the fastest way to reach me.
 
 <br/>
 
