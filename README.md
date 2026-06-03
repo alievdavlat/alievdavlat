@@ -1,12 +1,12 @@
 <!-- ====================== HEADER ====================== -->
 <a href="https://github.com/alievdavlat">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:8E2DE2,100:4A00E0&height=220&section=header&text=Davlatbek%20Aliev&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Full-Stack%20Web%20Developer%20%E2%80%A2%20developer%20for%20life&descAlignY=56&descSize=18" alt="header"/>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:8E2DE2,100:4A00E0&height=220&section=header&text=Davlatbek%20Aliev&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Full-Stack%20Web%20Developer&descAlignY=56&descSize=18" alt="header"/>
 </a>
 
 <!-- ====================== TYPING SVG ====================== -->
 <div align="center">
   <a href="https://github.com/alievdavlat">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=8E2DE2&center=true&vCenter=true&width=620&lines=Full-Stack+Web+Developer;React+%E2%80%A2+Next.js+%E2%80%A2+TypeScript+%E2%80%A2+Node.js;React+Native+%E2%80%A2+Electron+%E2%80%A2+NestJS;Building+web%2C+mobile+%26+desktop+apps" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3200&pause=900&color=8E2DE2&center=true&vCenter=true&width=620&lines=Full-Stack+Web+Developer;React+%E2%80%A2+Next.js+%E2%80%A2+TypeScript+%E2%80%A2+Node.js;React+Native+%E2%80%A2+Electron+%E2%80%A2+NestJS;I+build+CRMs%2C+dashboards+and+side+projects" alt="Typing SVG" />
   </a>
 </div>
 
@@ -31,27 +31,18 @@
 <br/>
 
 <!-- ====================== ABOUT ====================== -->
-## 🚀 About Me
+## 👋 About me
 
-```ts
-const davlat = {
-  role: "Full-Stack Web Developer",
-  experience: "Business solutions, CRMs & corporate platforms",
-  focus: ["Web Apps", "Mobile (React Native)", "Desktop (Electron)"],
-  frontend: ["React", "Next.js", "TypeScript", "Redux Toolkit", "Tailwind", "MUI"],
-  backend: ["Node.js", "Express", "NestJS", "GraphQL", "Strapi", "WebSockets"],
-  databases: ["PostgreSQL", "Redis", "MongoDB"],
-  devops: ["Docker", "Nginx", "Grafana"],
-  motto: "developer for life",
-};
-```
+I'm a full-stack web developer based in Tashkent. I started at Nova Studio in late 2023, building CRM systems and corporate sites with React, Next.js, Node and Strapi. That's also where I picked up React Native. Outside of work I build side projects to try the things my day job doesn't reach, usually by cloning an app I like and seeing how far I can get.
 
-- 🔭 Full-Stack Web Developer — strong in **both front-end and back-end**.
-- 🏢 Experienced building **CRM systems & corporate websites** (Strapi, React Native).
-- 🎨 Love **motion & 3D on the web** (GSAP, Framer Motion, Three.js).
-- ⚙️ Comfortable with **DevOps basics** — Docker, Nginx, Grafana.
-- 🗣️ Uzbek (native), Russian (B2), English (working proficiency).
-- 💬 Ask me about **React, Next.js, TypeScript, NestJS, or React Native**.
+A few things about how I work:
+
+- I like owning a feature from the database all the way to the UI.
+- I care about how an interface feels, so GSAP, Framer Motion and a bit of Three.js end up in most of my projects.
+- Lately I've been learning the ops side: Docker, Nginx, and a little Grafana for monitoring.
+- Languages: Uzbek (native), Russian (B2), English (still improving).
+
+If you want to talk React, Next.js, NestJS or React Native, I'm around.
 
 <br/>
 
@@ -86,7 +77,7 @@ const davlat = {
   </tr>
 </table>
 
-<sub>also working with <b>GSAP</b> · <b>Framer Motion</b> · <b>shadcn/ui</b> · <b>React Hook Form</b> · <b>Redux Toolkit</b></sub>
+<sub>also working with GSAP · Framer Motion · shadcn/ui · React Hook Form · Redux Toolkit</sub>
 </div>
 
 <br/>
@@ -110,16 +101,16 @@ const davlat = {
 <br/>
 
 <!-- ====================== FEATURED PROJECTS ====================== -->
-## 📌 Featured Projects
+## 📌 A few projects
 
-| Project | Description | Stack |
-|---------|-------------|-------|
-| 🏢 [Enterprise](https://github.com/alievdavlat/Enterprise) | Headless CMS / enterprise content platform | TypeScript · Node.js |
-| 📝 [Notion Clone](https://github.com/alievdavlat/notion-clone) | Real-time workspace & note-taking app | Next.js · Convex · Clerk · Shadcn UI |
-| 🎤 [Interview Platform](https://github.com/alievdavlat/interview-platform-nextjs) | Mock-interview & coding practice platform | Next.js · TypeScript |
-| 🎨 [3D Portfolio](https://github.com/alievdavlat/3d-portfolio-v3) | Interactive 3D portfolio with smooth motion | React · Three.js · Framer Motion |
-| 💻 [Code Snippet Manager](https://github.com/alievdavlat/code-snippets) | Store & manage code snippets across languages | Next.js · Convex · Clerk |
-| 📺 [YouTube Clone](https://github.com/alievdavlat/alievTube) | Video streaming & uploading platform | React · Node.js |
+| Project | What it is | Stack |
+|---------|-----------|-------|
+| [Enterprise](https://github.com/alievdavlat/Enterprise) | A headless CMS I'm building to manage content from one admin panel | TypeScript · Node.js |
+| [Notion Clone](https://github.com/alievdavlat/notion-clone) | A working Notion clone with real-time editing and nested docs | Next.js · Convex · Clerk · Shadcn UI |
+| [Interview Platform](https://github.com/alievdavlat/interview-platform-nextjs) | A place to run and practice mock interviews | Next.js · TypeScript |
+| [3D Portfolio](https://github.com/alievdavlat/3d-portfolio-v3) | My portfolio site, with 3D scenes and animation | React · Three.js · Framer Motion |
+| [Code Snippet Manager](https://github.com/alievdavlat/code-snippets) | Save and organize code snippets across languages | Next.js · Convex · Clerk |
+| [YouTube Clone](https://github.com/alievdavlat/alievTube) | Video upload and streaming, built to learn the hard parts | React · Node.js |
 
 <br/>
 
@@ -129,8 +120,9 @@ const davlat = {
 </div>
 
 <div align="center">
-  <h3>💜 Thanks for visiting! Let's build something great together.</h3>
-  <a href="https://t.me/alievv_15"><img src="https://img.shields.io/badge/Say%20Hi%20on%20Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="say hi"/></a>
+  <sub>Most of my projects are open, so feel free to dig through the code. If you want to talk shop, I'm on Telegram.</sub>
+  <br/><br/>
+  <a href="https://t.me/alievv_15"><img src="https://img.shields.io/badge/Message%20me%20on%20Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="message me"/></a>
 </div>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:4A00E0,100:8E2DE2&height=120&section=footer" alt="footer"/>
