@@ -54,7 +54,7 @@ I speak Uzbek and Russian, and I'm fluent in English. Telegram is the fastest wa
   </tr>
   <tr>
     <td align="right"><b>Frontend</b></td>
-    <td><img src="https://skillicons.dev/icons?i=react,nextjs,redux,tailwind,materialui,threejs,jquery&theme=dark" alt="frontend"/></td>
+    <td><img src="https://skillicons.dev/icons?i=react,nextjs,redux,tailwind,materialui,threejs,jquery,figma&theme=dark" alt="frontend"/></td>
   </tr>
   <tr>
     <td align="right"><b>Mobile &amp; Desktop</b></td>
@@ -70,7 +70,7 @@ I speak Uzbek and Russian, and I'm fluent in English. Telegram is the fastest wa
   </tr>
   <tr>
     <td align="right"><b>DevOps &amp; Tools</b></td>
-    <td><img src="https://skillicons.dev/icons?i=docker,nginx,grafana,git,github,gitlab,figma,vite&theme=dark" alt="devops and tools"/></td>
+    <td><img src="https://skillicons.dev/icons?i=docker,nginx,grafana,git,github,gitlab,jenkins&theme=dark" alt="devops and tools"/><br/><img src="https://img.shields.io/badge/Portainer-13BEF9?logo=portainer&logoColor=white&style=for-the-badge" alt="Portainer"/></td>
   </tr>
 </table>
 
