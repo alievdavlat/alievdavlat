@@ -26,7 +26,7 @@
 <table>
   <tr>
     <td width="320" valign="top" align="center">
-      <img width="290" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/lanyard.svg?v=2" alt="Developer ID badge"/>
+      <img width="290" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/lanyard.svg?v=3" alt="Developer ID badge"/>
     </td>
     <td valign="top">
       <h2>👋 About me</h2>
