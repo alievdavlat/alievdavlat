@@ -51,6 +51,7 @@
       <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
     </linearGradient>
 
+    <filter id="pglow" x="-35%" y="-35%" width="170%" height="170%"><feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#22d3ee" flood-opacity="0.45"/></filter>
     <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="4" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
@@ -252,13 +253,9 @@
 
     <!-- ===== character slot (right) with hologram scanner ===== -->
     <!-- REPLACE the <image> href below with your background-removed photo (base64 PNG). -->
-    <!-- ground shadow -->
-    <ellipse class="grnd" cx="1102" cy="532" rx="96" ry="15" fill="#050a14"/>
-    <!-- pulsing cyan aura behind the person -->
-    <ellipse class="aura" cx="1102" cy="330" rx="155" ry="210" fill="url(#aura)"/>
-    <!-- frameless person + silhouette scanner -->
+    <!-- frameless person with cyan rim glow + silhouette scanner -->
     <g class="floatp">
-      <use class="holo" xlink:href="#personimg"/>
+      <use class="holo" xlink:href="#personimg" filter="url(#pglow)"/>
       <rect class="beam" x="958" y="150" width="288" height="60" fill="url(#beam)" mask="url(#silho)"/>
     </g>
 
