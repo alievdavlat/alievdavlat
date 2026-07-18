@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 312" width="560" height="312" fill="none" role="img" aria-label="Skill proficiency">
+  <title>Skills</title>
+  <defs>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/><stop offset="55%" stop-color="#22d3ee"/><stop offset="100%" stop-color="#67e8f9"/>
+    </linearGradient>
+    <style>
+      .mono{font-family:'Cascadia Code','Fira Code','Consolas',monospace}
+      @keyframes grow { from{transform:scaleX(0)} to{transform:scaleX(1)} }
+      .fill{ transform-box: fill-box; transform-origin: left center; animation: grow 1s cubic-bezier(.2,.8,.2,1) both; }
+      @keyframes pop { 0%{opacity:0;transform:scale(0)} 100%{opacity:1;transform:scale(1)} }
+      .dot{ transform-box: fill-box; transform-origin: center; animation: pop .4s ease-out both; }
+      @keyframes sh { 0%,100%{opacity:.5} 50%{opacity:1} }
+    </style>
+  </defs>
+  <text x="220" y="24" class="mono" font-size="15" font-weight="700" fill="#22d3ee">// core proficiency</text>
+  <text x="200" y="55" text-anchor="end" class="mono" font-size="14" fill="#c9d6e5">React / Next.js</text>
+  <rect x="220" y="42" width="300" height="16" rx="8" fill="#0c1a30" stroke="#1c3350"/>
+  <rect class="fill" x="220" y="42" width="285" height="16" rx="8" fill="url(#bar)" style="animation-delay:0.15s"/>
+  <circle class="dot" cx="505" cy="50" r="5" fill="#67e8f9" style="animation-delay:0.85s"/>
+  <text x="200" y="97" text-anchor="end" class="mono" font-size="14" fill="#c9d6e5">Node.js / NestJS</text>
+  <rect x="220" y="84" width="300" height="16" rx="8" fill="#0c1a30" stroke="#1c3350"/>
+  <rect class="fill" x="220" y="84" width="270" height="16" rx="8" fill="url(#bar)" style="animation-delay:0.3s"/>
+  <circle class="dot" cx="490" cy="92" r="5" fill="#67e8f9" style="animation-delay:1.00s"/>
+  <text x="200" y="139" text-anchor="end" class="mono" font-size="14" fill="#c9d6e5">TypeScript</text>
+  <rect x="220" y="126" width="300" height="16" rx="8" fill="#0c1a30" stroke="#1c3350"/>
+  <rect class="fill" x="220" y="126" width="270" height="16" rx="8" fill="url(#bar)" style="animation-delay:0.44999999999999996s"/>
+  <circle class="dot" cx="490" cy="134" r="5" fill="#67e8f9" style="animation-delay:1.15s"/>
+  <text x="200" y="181" text-anchor="end" class="mono" font-size="14" fill="#c9d6e5">PostgreSQL / Mongo</text>
+  <rect x="220" y="168" width="300" height="16" rx="8" fill="#0c1a30" stroke="#1c3350"/>
+  <rect class="fill" x="220" y="168" width="246" height="16" rx="8" fill="url(#bar)" style="animation-delay:0.6s"/>
+  <circle class="dot" cx="466" cy="176" r="5" fill="#67e8f9" style="animation-delay:1.30s"/>
+  <text x="200" y="223" text-anchor="end" class="mono" font-size="14" fill="#c9d6e5">Docker / DevOps</text>
+  <rect x="220" y="210" width="300" height="16" rx="8" fill="#0c1a30" stroke="#1c3350"/>
+  <rect class="fill" x="220" y="210" width="234" height="16" rx="8" fill="url(#bar)" style="animation-delay:0.75s"/>
+  <circle class="dot" cx="454" cy="218" r="5" fill="#67e8f9" style="animation-delay:1.45s"/>
+  <text x="200" y="265" text-anchor="end" class="mono" font-size="14" fill="#c9d6e5">React Native / Electron</text>
+  <rect x="220" y="252" width="300" height="16" rx="8" fill="#0c1a30" stroke="#1c3350"/>
+  <rect class="fill" x="220" y="252" width="216" height="16" rx="8" fill="url(#bar)" style="animation-delay:0.9s"/>
+  <circle class="dot" cx="436" cy="260" r="5" fill="#67e8f9" style="animation-delay:1.60s"/>
+</svg>

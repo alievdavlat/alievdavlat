@@ -38,6 +38,12 @@
       <stop offset="100%" stop-color="#2563eb"/>
     </linearGradient>
 
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="42%" stop-color="#67e8f9"/>
+      <stop offset="52%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+    </linearGradient>
     <!-- scanner beam -->
     <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"  stop-color="#22d3ee" stop-opacity="0"/>
@@ -104,6 +110,16 @@
 
       @keyframes tw { 0%,100%{opacity:.15; transform:scale(.6)} 50%{opacity:1; transform:scale(1)} }
       .spark { transform-box: fill-box; transform-origin:center; animation: tw 2.6s ease-in-out infinite; }
+      /* --- extra FX --- */
+      @keyframes type { from{clip-path: inset(0 100% 0 0)} to{clip-path: inset(0 0 0 0)} }
+      .type{ opacity:0; clip-path: inset(0 100% 0 0); animation: fadeUp .35s ease-out forwards, type .7s steps(24,end) forwards; }
+      @keyframes glitch { 0%,88%,100%{transform:translate(0,0)} 89%{transform:translate(-3px,1px)} 91%{transform:translate(3px,-1px)} 93%{transform:translate(-2px,0)} 95%{transform:translate(2px,-1px)} 97%{transform:translate(-1px,1px)} }
+      .glitch{ animation: glitch 5.5s infinite; }
+      @keyframes rain { 0%{transform:translateY(-140px);opacity:0} 12%{opacity:.6} 88%{opacity:.4} 100%{transform:translateY(780px);opacity:0} }
+      .rain{ animation-name: rain; animation-timing-function: linear; animation-iteration-count: infinite; }
+      @keyframes eq { 0%,100%{transform:scaleY(.22)} 50%{transform:scaleY(1)} }
+      .bar{ transform-box: fill-box; transform-origin: center bottom; animation-name: eq; animation-timing-function: ease-in-out; animation-iteration-count: infinite; }
+      @keyframes flowdash { to{ stroke-dashoffset: -3928 } }
     </style>
   </defs>
 
@@ -112,10 +128,18 @@
     <rect x="8" y="8" width="1264" height="704" fill="url(#bg)"/>
     <rect x="36" y="40" width="566" height="640" rx="22" fill="#0a1120" stroke="#22d3ee" stroke-opacity=".25"/>
 
-    <!-- faint grid -->
-    <g stroke="#c4d3e8" stroke-width="1" opacity="0.6">
-      <path d="M8 190 H1272 M8 372 H1272 M8 554 H1272"/>
-      <path d="M330 8 V712 M660 8 V712 M990 8 V712"/>
+    <!-- matrix code rain -->
+    <g>
+      <g class="rain" style="animation-duration:8.1s;animation-delay:-0.2s" fill="#22d3ee" opacity="0.09" font-size="14" font-family="monospace"><text x="70" y="0">0</text><text x="70" y="20">0</text><text x="70" y="40">0</text><text x="70" y="60">1</text><text x="70" y="80">0</text><text x="70" y="100">0</text><text x="70" y="120">0</text><text x="70" y="140">0</text><text x="70" y="160">0</text><text x="70" y="180">0</text><text x="70" y="200">0</text><text x="70" y="220">1</text><text x="70" y="240">0</text><text x="70" y="260">1</text><text x="70" y="280">1</text><text x="70" y="300">0</text><text x="70" y="320">0</text><text x="70" y="340">1</text><text x="70" y="360">1</text><text x="70" y="380">1</text><text x="70" y="400">0</text><text x="70" y="420">0</text><text x="70" y="440">1</text><text x="70" y="460">0</text><text x="70" y="480">0</text><text x="70" y="500">1</text></g>
+      <g class="rain" style="animation-duration:5.9s;animation-delay:-5.0s" fill="#22d3ee" opacity="0.12" font-size="13" font-family="monospace"><text x="188" y="0">1</text><text x="188" y="20">0</text><text x="188" y="40">1</text><text x="188" y="60">0</text><text x="188" y="80">1</text><text x="188" y="100">1</text><text x="188" y="120">0</text><text x="188" y="140">0</text><text x="188" y="160">0</text><text x="188" y="180">0</text><text x="188" y="200">1</text><text x="188" y="220">0</text><text x="188" y="240">0</text><text x="188" y="260">0</text><text x="188" y="280">1</text><text x="188" y="300">1</text><text x="188" y="320">1</text><text x="188" y="340">1</text><text x="188" y="360">0</text><text x="188" y="380">1</text><text x="188" y="400">1</text><text x="188" y="420">0</text><text x="188" y="440">1</text><text x="188" y="460">0</text><text x="188" y="480">0</text><text x="188" y="500">0</text></g>
+      <g class="rain" style="animation-duration:6.2s;animation-delay:-2.4s" fill="#22d3ee" opacity="0.15" font-size="14" font-family="monospace"><text x="306" y="0">1</text><text x="306" y="20">0</text><text x="306" y="40">0</text><text x="306" y="60">0</text><text x="306" y="80">1</text><text x="306" y="100">1</text><text x="306" y="120">1</text><text x="306" y="140">0</text><text x="306" y="160">0</text><text x="306" y="180">1</text><text x="306" y="200">0</text><text x="306" y="220">1</text><text x="306" y="240">1</text><text x="306" y="260">1</text><text x="306" y="280">0</text><text x="306" y="300">1</text><text x="306" y="320">0</text><text x="306" y="340">0</text><text x="306" y="360">1</text><text x="306" y="380">1</text><text x="306" y="400">1</text><text x="306" y="420">1</text><text x="306" y="440">0</text><text x="306" y="460">0</text><text x="306" y="480">1</text><text x="306" y="500">0</text></g>
+      <g class="rain" style="animation-duration:8.5s;animation-delay:-7.3s" fill="#22d3ee" opacity="0.08" font-size="14" font-family="monospace"><text x="424" y="0">1</text><text x="424" y="20">0</text><text x="424" y="40">1</text><text x="424" y="60">1</text><text x="424" y="80">1</text><text x="424" y="100">1</text><text x="424" y="120">0</text><text x="424" y="140">0</text><text x="424" y="160">1</text><text x="424" y="180">1</text><text x="424" y="200">0</text><text x="424" y="220">1</text><text x="424" y="240">1</text><text x="424" y="260">0</text><text x="424" y="280">1</text><text x="424" y="300">0</text><text x="424" y="320">1</text><text x="424" y="340">0</text><text x="424" y="360">0</text><text x="424" y="380">1</text><text x="424" y="400">0</text><text x="424" y="420">0</text><text x="424" y="440">1</text><text x="424" y="460">0</text><text x="424" y="480">0</text><text x="424" y="500">1</text></g>
+      <g class="rain" style="animation-duration:7.5s;animation-delay:-0.8s" fill="#22d3ee" opacity="0.1" font-size="15" font-family="monospace"><text x="542" y="0">0</text><text x="542" y="20">0</text><text x="542" y="40">0</text><text x="542" y="60">0</text><text x="542" y="80">0</text><text x="542" y="100">1</text><text x="542" y="120">0</text><text x="542" y="140">0</text><text x="542" y="160">0</text><text x="542" y="180">1</text><text x="542" y="200">0</text><text x="542" y="220">1</text><text x="542" y="240">1</text><text x="542" y="260">0</text><text x="542" y="280">0</text><text x="542" y="300">1</text><text x="542" y="320">1</text><text x="542" y="340">1</text><text x="542" y="360">1</text><text x="542" y="380">1</text><text x="542" y="400">0</text><text x="542" y="420">0</text><text x="542" y="440">0</text><text x="542" y="460">0</text><text x="542" y="480">1</text><text x="542" y="500">0</text></g>
+      <g class="rain" style="animation-duration:7.9s;animation-delay:-1.8s" fill="#22d3ee" opacity="0.09" font-size="13" font-family="monospace"><text x="660" y="0">0</text><text x="660" y="20">0</text><text x="660" y="40">0</text><text x="660" y="60">0</text><text x="660" y="80">1</text><text x="660" y="100">0</text><text x="660" y="120">0</text><text x="660" y="140">1</text><text x="660" y="160">1</text><text x="660" y="180">0</text><text x="660" y="200">0</text><text x="660" y="220">1</text><text x="660" y="240">0</text><text x="660" y="260">1</text><text x="660" y="280">1</text><text x="660" y="300">0</text><text x="660" y="320">0</text><text x="660" y="340">0</text><text x="660" y="360">1</text><text x="660" y="380">1</text><text x="660" y="400">1</text><text x="660" y="420">1</text><text x="660" y="440">1</text><text x="660" y="460">0</text><text x="660" y="480">0</text><text x="660" y="500">0</text></g>
+      <g class="rain" style="animation-duration:7.1s;animation-delay:-2.4s" fill="#22d3ee" opacity="0.14" font-size="14" font-family="monospace"><text x="778" y="0">0</text><text x="778" y="20">0</text><text x="778" y="40">1</text><text x="778" y="60">0</text><text x="778" y="80">1</text><text x="778" y="100">0</text><text x="778" y="120">1</text><text x="778" y="140">1</text><text x="778" y="160">0</text><text x="778" y="180">0</text><text x="778" y="200">1</text><text x="778" y="220">0</text><text x="778" y="240">0</text><text x="778" y="260">0</text><text x="778" y="280">0</text><text x="778" y="300">0</text><text x="778" y="320">0</text><text x="778" y="340">1</text><text x="778" y="360">1</text><text x="778" y="380">1</text><text x="778" y="400">0</text><text x="778" y="420">1</text><text x="778" y="440">0</text><text x="778" y="460">0</text><text x="778" y="480">1</text><text x="778" y="500">0</text></g>
+      <g class="rain" style="animation-duration:9.4s;animation-delay:-2.5s" fill="#22d3ee" opacity="0.13" font-size="16" font-family="monospace"><text x="896" y="0">1</text><text x="896" y="20">1</text><text x="896" y="40">1</text><text x="896" y="60">0</text><text x="896" y="80">0</text><text x="896" y="100">1</text><text x="896" y="120">0</text><text x="896" y="140">0</text><text x="896" y="160">0</text><text x="896" y="180">1</text><text x="896" y="200">0</text><text x="896" y="220">0</text><text x="896" y="240">1</text><text x="896" y="260">0</text><text x="896" y="280">0</text><text x="896" y="300">0</text><text x="896" y="320">0</text><text x="896" y="340">0</text><text x="896" y="360">0</text><text x="896" y="380">0</text><text x="896" y="400">1</text><text x="896" y="420">0</text><text x="896" y="440">0</text><text x="896" y="460">0</text><text x="896" y="480">0</text><text x="896" y="500">1</text></g>
+      <g class="rain" style="animation-duration:8.1s;animation-delay:-4.6s" fill="#22d3ee" opacity="0.1" font-size="15" font-family="monospace"><text x="1014" y="0">0</text><text x="1014" y="20">1</text><text x="1014" y="40">0</text><text x="1014" y="60">1</text><text x="1014" y="80">1</text><text x="1014" y="100">0</text><text x="1014" y="120">1</text><text x="1014" y="140">1</text><text x="1014" y="160">1</text><text x="1014" y="180">0</text><text x="1014" y="200">0</text><text x="1014" y="220">1</text><text x="1014" y="240">0</text><text x="1014" y="260">0</text><text x="1014" y="280">0</text><text x="1014" y="300">1</text><text x="1014" y="320">0</text><text x="1014" y="340">1</text><text x="1014" y="360">0</text><text x="1014" y="380">0</text><text x="1014" y="400">1</text><text x="1014" y="420">1</text><text x="1014" y="440">0</text><text x="1014" y="460">1</text><text x="1014" y="480">1</text><text x="1014" y="500">0</text></g>
+      <g class="rain" style="animation-duration:8.2s;animation-delay:-4.5s" fill="#22d3ee" opacity="0.14" font-size="13" font-family="monospace"><text x="1132" y="0">0</text><text x="1132" y="20">1</text><text x="1132" y="40">0</text><text x="1132" y="60">0</text><text x="1132" y="80">0</text><text x="1132" y="100">1</text><text x="1132" y="120">1</text><text x="1132" y="140">0</text><text x="1132" y="160">1</text><text x="1132" y="180">0</text><text x="1132" y="200">1</text><text x="1132" y="220">1</text><text x="1132" y="240">1</text><text x="1132" y="260">0</text><text x="1132" y="280">0</text><text x="1132" y="300">1</text><text x="1132" y="320">1</text><text x="1132" y="340">0</text><text x="1132" y="360">0</text><text x="1132" y="380">1</text><text x="1132" y="400">0</text><text x="1132" y="420">1</text><text x="1132" y="440">0</text><text x="1132" y="460">1</text><text x="1132" y="480">1</text><text x="1132" y="500">0</text></g>
     </g>
 
     <!-- floating particles -->
@@ -143,6 +167,7 @@
     <text x="70" y="140" class="sans up" style="animation-delay:.25s" font-size="26" font-weight="600" fill="#cbd5e1">Hi, I'm 👋</text>
 
     <!-- name, letter by letter -->
+    <g class="glitch">
     <g class="sans" font-size="82" font-weight="800" fill="url(#name)" filter="url(#softglow)" letter-spacing="1">
       <text x="70"  y="232" class="ltr" style="animation-delay:.55s">D</text>
       <text x="126" y="232" class="ltr" style="animation-delay:.60s">a</text>
@@ -161,6 +186,7 @@
       <text x="148" y="308" class="ltr" style="animation-delay:1.20s">e</text>
       <text x="184" y="308" class="ltr" style="animation-delay:1.25s">v</text>
       <text x="228" y="300" class="ltr" style="animation-delay:1.35s" font-size="44" fill="#22d3ee" filter="url(#softglow)">&lt;/&gt;</text>
+    </g>
     </g>
 
     <!-- cycling role titles -->
@@ -208,12 +234,12 @@
       <circle cx="24" cy="19" r="6" fill="#ff5f56"/><circle cx="46" cy="19" r="6" fill="#ffbd2e"/><circle cx="68" cy="19" r="6" fill="#27c93f"/>
       <text x="205" y="24" text-anchor="middle" class="mono" font-size="14" fill="#7b8aa6">buildDreams.tsx</text>
       <g class="mono" font-size="16">
-        <text x="26" y="78"  class="up" style="animation-delay:1.2s" fill="#c792ea">function <tspan fill="#82aaff">buildDreams</tspan><tspan fill="#89ddff">()</tspan> {</text>
-        <text x="52" y="106" class="up" style="animation-delay:1.5s" fill="#c792ea">return <tspan fill="#89ddff">(</tspan></text>
-        <text x="78" y="134" class="up" style="animation-delay:1.8s" fill="#89ddff">&lt;<tspan fill="#22d3ee">Ship</tspan> <tspan fill="#c3e88d">clean</tspan>=<tspan fill="#ecc48d">"true"</tspan>&gt;</text>
-        <text x="104" y="162" class="up" style="animation-delay:2.1s" fill="#89ddff">&lt;<tspan fill="#22d3ee">Code</tspan>/&gt; &lt;<tspan fill="#22d3ee">Learn</tspan>/&gt; &lt;<tspan fill="#22d3ee">Deploy</tspan>/&gt;</text>
-        <text x="104" y="190" class="up" style="animation-delay:2.4s" fill="#89ddff">&lt;<tspan fill="#22d3ee">Repeat</tspan>/&gt;</text>
-        <text x="78" y="218" class="up" style="animation-delay:2.7s" fill="#89ddff">&lt;/<tspan fill="#22d3ee">Ship</tspan>&gt;<tspan class="cursor" fill="#67e8f9">▋</tspan></text>
+        <text x="26" y="78"  class="type" style="animation-delay:1.2s" fill="#c792ea">function <tspan fill="#82aaff">buildDreams</tspan><tspan fill="#89ddff">()</tspan> {</text>
+        <text x="52" y="106" class="type" style="animation-delay:1.5s" fill="#c792ea">return <tspan fill="#89ddff">(</tspan></text>
+        <text x="78" y="134" class="type" style="animation-delay:1.8s" fill="#89ddff">&lt;<tspan fill="#22d3ee">Ship</tspan> <tspan fill="#c3e88d">clean</tspan>=<tspan fill="#ecc48d">"true"</tspan>&gt;</text>
+        <text x="104" y="162" class="type" style="animation-delay:2.1s" fill="#89ddff">&lt;<tspan fill="#22d3ee">Code</tspan>/&gt; &lt;<tspan fill="#22d3ee">Learn</tspan>/&gt; &lt;<tspan fill="#22d3ee">Deploy</tspan>/&gt;</text>
+        <text x="104" y="190" class="type" style="animation-delay:2.4s" fill="#89ddff">&lt;<tspan fill="#22d3ee">Repeat</tspan>/&gt;</text>
+        <text x="78" y="218" class="type" style="animation-delay:2.7s" fill="#89ddff">&lt;/<tspan fill="#22d3ee">Ship</tspan>&gt;<tspan class="cursor" fill="#67e8f9">▋</tspan></text>
       </g>
     </g>
 
@@ -236,7 +262,30 @@
       <rect class="beam" x="958" y="150" width="288" height="60" fill="url(#beam)" mask="url(#silho)"/>
     </g>
 
+    <!-- equalizer bars -->
+    <g opacity="0.9">
+      <rect class="bar" x="612" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.09s;animation-delay:-0.18s"/>
+      <rect class="bar" x="628" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.29s;animation-delay:-0.09s"/>
+      <rect class="bar" x="644" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.22s;animation-delay:-0.44s"/>
+      <rect class="bar" x="660" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:0.93s;animation-delay:-0.61s"/>
+      <rect class="bar" x="676" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:0.92s;animation-delay:-0.52s"/>
+      <rect class="bar" x="692" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:0.94s;animation-delay:-0.11s"/>
+      <rect class="bar" x="708" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.15s;animation-delay:-0.99s"/>
+      <rect class="bar" x="724" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:0.97s;animation-delay:-0.27s"/>
+      <rect class="bar" x="740" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.28s;animation-delay:-1.14s"/>
+      <rect class="bar" x="756" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.25s;animation-delay:-0.48s"/>
+      <rect class="bar" x="772" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.49s;animation-delay:-0.06s"/>
+      <rect class="bar" x="788" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.42s;animation-delay:-0.35s"/>
+      <rect class="bar" x="804" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:0.99s;animation-delay:-0.14s"/>
+      <rect class="bar" x="820" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.09s;animation-delay:-0.98s"/>
+      <rect class="bar" x="836" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.01s;animation-delay:-0.7s"/>
+      <rect class="bar" x="852" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.28s;animation-delay:-0.45s"/>
+      <rect class="bar" x="868" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.23s;animation-delay:-0.08s"/>
+      <rect class="bar" x="884" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:0.94s;animation-delay:-0.25s"/>
+    </g>
+
     <!-- outer border glow -->
-    <rect x="9" y="9" width="1262" height="702" rx="25" fill="none" stroke="url(#edge)" stroke-opacity="0.5" stroke-width="2"/>
+    <rect x="9" y="9" width="1262" height="702" rx="25" fill="none" stroke="url(#edge)" stroke-opacity="0.25" stroke-width="2"/>
+    <rect x="9" y="9" width="1262" height="702" rx="25" fill="none" stroke="url(#flow)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="260 3670" style="animation: flowdash 6s linear infinite;"/>
   </g>
 </svg>
