@@ -135,14 +135,20 @@
 <!-- ====================== FEATURED PROJECTS ====================== -->
 ## 📌 A few projects
 
-| Project | What it is | Stack |
-|---------|-----------|-------|
-| [Enterprise](https://github.com/alievdavlat/Enterprise) | A headless CMS I'm building to manage content from one admin panel | TypeScript · Node.js |
-| [Notion Clone](https://github.com/alievdavlat/notion-clone) | A working Notion clone with real-time editing and nested docs | Next.js · Convex · Clerk · Shadcn UI |
-| [Interview Platform](https://github.com/alievdavlat/interview-platform-nextjs) | A place to run and practice mock interviews | Next.js · WebRTC · Convex |
-| [3D Portfolio](https://github.com/alievdavlat/3d-portfolio-v3) | My portfolio site, with 3D scenes and animation | React · Three.js · Framer Motion |
-| [Code Snippet Manager](https://github.com/alievdavlat/code-snippets) | Save and organize code snippets across languages | Next.js · Convex · Clerk |
-| [YouTube Clone](https://github.com/alievdavlat/alievTube) | Video upload and streaming, built to learn the hard parts | React · Node.js |
+<table>
+  <tr>
+    <td width="50%"><a href="https://github.com/alievdavlat/Enterprise"><img width="100%" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/p1.svg?v=1" alt="Enterprise — headless CMS"/></a></td>
+    <td width="50%"><a href="https://github.com/alievdavlat/notion-clone"><img width="100%" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/p2.svg?v=1" alt="Notion Clone"/></a></td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="https://github.com/alievdavlat/interview-platform-nextjs"><img width="100%" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/p3.svg?v=1" alt="Interview Platform"/></a></td>
+    <td width="50%"><a href="https://github.com/alievdavlat/3d-portfolio-v3"><img width="100%" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/p4.svg?v=1" alt="3D Portfolio"/></a></td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="https://github.com/alievdavlat/code-snippets"><img width="100%" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/p5.svg?v=1" alt="Code Snippets"/></a></td>
+    <td width="50%"><a href="https://github.com/alievdavlat/alievTube"><img width="100%" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/p6.svg?v=1" alt="YouTube Clone"/></a></td>
+  </tr>
+</table>
 
 <br/>
 

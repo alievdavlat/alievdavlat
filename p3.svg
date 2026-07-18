@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 152" width="440" height="152" fill="none" role="img" aria-label="Interview Platform">
+  <title>Interview Platform</title>
+  <defs>
+    <linearGradient id="accp3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#67e8f9"/><stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="bmp3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/><stop offset="45%" stop-color="#67e8f9"/>
+      <stop offset="55%" stop-color="#ffffff"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="shp3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0"/><stop offset="50%" stop-color="#67e8f9" stop-opacity=".14"/>
+      <stop offset="100%" stop-color="#67e8f9" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="ccp3"><rect x="3" y="3" width="434" height="146" rx="14"/></clipPath>
+    <style>
+      .mono{font-family:'Cascadia Code','Fira Code','Consolas',monospace}
+      .sans{font-family:'Segoe UI','Trebuchet MS',Arial,sans-serif}
+      @keyframes fadein { from{opacity:0} to{opacity:1} }
+      .in{ opacity:0; animation: fadein .6s ease-out forwards; }
+      @keyframes bmv { to { stroke-dashoffset: -1180 } }
+      @keyframes shim { 0%{transform:translateX(-160px) skewX(-18deg)} 55%,100%{transform:translateX(480px) skewX(-18deg)} }
+      .shim{ animation: shim 4.8s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <rect x="3" y="3" width="434" height="146" rx="14" fill="#0b1220" stroke="#1c3350"/>
+  <rect x="3" y="3" width="434" height="146" rx="14" fill="none" stroke="url(#bmp3)" stroke-width="2"
+        stroke-dasharray="150 1030" style="animation: bmv 5s linear infinite; animation-delay:-1.4s;"/>
+  <rect x="3" y="3" width="6" height="146" rx="3" fill="url(#accp3)"/>
+
+  <g clip-path="url(#ccp3)">
+    <rect class="shim" x="-160" y="0" width="90" height="152" fill="url(#shp3)"/>
+  </g>
+
+  <!-- window chrome -->
+  <circle cx="28" cy="26" r="5" fill="#ff5f56"/><circle cx="46" cy="26" r="5" fill="#ffbd2e"/><circle cx="64" cy="26" r="5" fill="#27c93f"/>
+  <text x="86" y="30" class="mono in" style="animation-delay:.1s" font-size="12" fill="#7b8aa6">interview.tsx</text>
+  <text x="418" y="31" text-anchor="end" class="mono in" style="animation-delay:.15s" font-size="14" fill="#22d3ee">↗</text>
+
+  <text x="20" y="70" class="sans in" style="animation-delay:.25s" font-size="21" font-weight="800" fill="#67e8f9">Interview Platform</text>
+  <text x="20" y="98" class="mono in" style="animation-delay:.38s" font-size="12" fill="#9fb3cc">Run and practice mock interviews, live</text>
+    <g class="in" style="animation-delay:.5s"><rect x="20" y="118" width="64" height="22" rx="11" fill="#0c1a30" stroke="#22d3ee" stroke-opacity=".5"/><text x="52" y="133" text-anchor="middle" class="mono" font-size="11" fill="#67e8f9">Next.js</text></g>
+    <g class="in" style="animation-delay:.5s"><rect x="92" y="118" width="57" height="22" rx="11" fill="#0c1a30" stroke="#22d3ee" stroke-opacity=".5"/><text x="121" y="133" text-anchor="middle" class="mono" font-size="11" fill="#67e8f9">WebRTC</text></g>
+    <g class="in" style="animation-delay:.5s"><rect x="158" y="118" width="57" height="22" rx="11" fill="#0c1a30" stroke="#22d3ee" stroke-opacity=".5"/><text x="186" y="133" text-anchor="middle" class="mono" font-size="11" fill="#67e8f9">Convex</text></g>
+</svg>
