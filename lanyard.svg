@@ -33,7 +33,7 @@
       }
       #intro{ animation: drop .9s ease-out both; }
       #pend{ transform-box: fill-box; transform-origin: 160px 12px; animation: sway 6s ease-in-out .9s infinite; }
-      @keyframes glide { 0%{transform:translateX(-260px)} 60%,100%{transform:translateX(260px)} }
+      @keyframes glide { 0%{transform:translateX(-260px) skewX(-18deg)} 60%,100%{transform:translateX(260px) skewX(-18deg)} }
       .shineband{ animation: glide 4.5s ease-in-out infinite; }
     </style>
   </defs>
