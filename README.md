@@ -17,6 +17,7 @@
   <a href="https://t.me/alievv_15" target="_blank"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/></a>
   <a href="mailto:alievdavlat024@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
   <br/><br/>
+    <img src="https://komarev.com/ghpvc/?username=alievdavlat&style=for-the-badge&color=22D3EE&label=PROFILE+VIEWS" alt="Profile views"/>
 </div>
 
 <br/>
