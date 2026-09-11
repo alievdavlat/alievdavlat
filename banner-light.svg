@@ -190,7 +190,7 @@
     <!-- cycling role titles -->
     <g class="mono" font-size="24" font-weight="600" transform="translate(72,360)">
       <text class="role" style="animation-delay:0s"   fill="#67e8f9">&#9656; Full-Stack Software Engineer</text>
-      <text class="role" style="animation-delay:3s"   fill="#38bdf8">&#9656; React · Next.js · Node.js · NestJS</text>
+      <text class="role" style="animation-delay:3s"   fill="#38bdf8">&#9656; React · Next.js · Node.js · Strapi</text>
       <text class="role" style="animation-delay:6s"   fill="#60a5fa">&#9656; DevOps · Docker · CI/CD · Nginx</text>
     </g>
 
@@ -198,7 +198,7 @@
     <g class="up" style="animation-delay:1.5s" transform="translate(72,388)">
       <rect width="470" height="76" rx="12" fill="url(#pill)" stroke="#1c3350"/>
       <rect width="4" height="76" rx="2" fill="url(#edge)"/>
-      <text x="24" y="34" class="mono" font-size="18" fill="#cbd5e1">I don't just build it —</text>
+      <text x="24" y="34" class="mono" font-size="18" fill="#cbd5e1">I'd rather ship my own work</text>
       <text x="24" y="60" class="mono" font-size="18" fill="#22d3ee">I <tspan fill="#cbd5e1">ship</tspan> it myself.</text>
     </g>
 
@@ -208,14 +208,14 @@
       <g class="up" style="animation-delay:1.8s" transform="translate(118,0)"><rect width="76" height="34" rx="17" fill="url(#pill)" stroke="#38bdf8" stroke-opacity=".55"/><text x="38" y="22" text-anchor="middle" fill="#67e8f9">React</text></g>
       <g class="up" style="animation-delay:1.9s" transform="translate(204,0)"><rect width="86" height="34" rx="17" fill="url(#pill)" stroke="#3b82f6" stroke-opacity=".55"/><text x="43" y="22" text-anchor="middle" fill="#67e8f9">Next.js</text></g>
       <g class="up" style="animation-delay:2.0s" transform="translate(300,0)"><rect width="88" height="34" rx="17" fill="url(#pill)" stroke="#22d3ee" stroke-opacity=".55"/><text x="44" y="22" text-anchor="middle" fill="#67e8f9">Node.js</text></g>
-      <g class="up" style="animation-delay:2.1s" transform="translate(0,44)"><rect width="80" height="34" rx="17" fill="url(#pill)" stroke="#38bdf8" stroke-opacity=".55"/><text x="40" y="22" text-anchor="middle" fill="#67e8f9">NestJS</text></g>
+      <g class="up" style="animation-delay:2.1s" transform="translate(0,44)"><rect width="80" height="34" rx="17" fill="url(#pill)" stroke="#38bdf8" stroke-opacity=".55"/><text x="40" y="22" text-anchor="middle" fill="#67e8f9">PostgreSQL</text></g>
       <g class="up" style="animation-delay:2.2s" transform="translate(90,44)"><rect width="78" height="34" rx="17" fill="url(#pill)" stroke="#3b82f6" stroke-opacity=".55"/><text x="39" y="22" text-anchor="middle" fill="#67e8f9">Docker</text></g>
       <g class="up" style="animation-delay:2.3s" transform="translate(178,44)"><rect width="82" height="34" rx="17" fill="url(#pill)" stroke="#22d3ee" stroke-opacity=".55"/><text x="41" y="22" text-anchor="middle" fill="#67e8f9">Strapi</text></g>
     </g>
 
     <!-- about line + stat bar -->
     <text x="72" y="622" class="mono up" style="animation-delay:2.4s" font-size="16" fill="#7b8aa6">
-      <tspan fill="#22d3ee">&gt;_</tspan> I build CRMs, dashboards &amp; side projects — from UI to deploy.
+      <tspan fill="#22d3ee">&gt;_</tspan> I build CRMs, dashboards &amp; side projects, from UI to deploy.
     </text>
     <g class="mono up" style="animation-delay:2.55s" font-size="15" fill="#8aa0bd" transform="translate(72,650)">
       <text x="0" y="16"><tspan fill="#67e8f9" font-weight="700">2+ yrs</tspan> in production</text>
