@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      viewBox="0 0 1280 720" width="1280" height="720" fill="none" role="img"
      aria-label="Davlatbek Aliev, Full-Stack Engineer animated banner">
-  <title>Davlatbek Aliev — Full-Stack Engineer</title>
+  <title>Davlatbek Aliev, Full-Stack Engineer</title>
 
   <!-- ============================= DEFS ============================= -->
   <defs>
@@ -198,7 +198,7 @@
       <rect width="470" height="76" rx="12" fill="url(#pill)" stroke="#1c3350"/>
       <rect width="4" height="76" rx="2" fill="url(#edge)"/>
       <text x="24" y="34" class="mono" font-size="18" fill="#cbd5e1">I'd rather ship my own work</text>
-      <text x="24" y="60" class="mono" font-size="18" fill="#22d3ee">I <tspan fill="#cbd5e1">ship</tspan> it myself.</text>
+      <text x="24" y="60" class="mono" font-size="18" fill="#22d3ee">than <tspan fill="#cbd5e1">hand</tspan> it off.</text>
     </g>
 
     <!-- tech pills -->
@@ -217,8 +217,8 @@
       <tspan fill="#22d3ee">&gt;_</tspan> I build CRMs, dashboards &amp; side projects, from UI to deploy.
     </text>
     <g class="mono up" style="animation-delay:2.55s" font-size="15" fill="#8aa0bd" transform="translate(72,650)">
-      <text x="0" y="16"><tspan fill="#67e8f9" font-weight="700">2+ yrs</tspan> in production</text>
-      <text x="180" y="16"><tspan fill="#67e8f9" font-weight="700">5</tspan> open-source npm plugins</text>
+      <text x="0" y="16"><tspan fill="#67e8f9" font-weight="700">2.5 yrs</tspan> in production</text>
+      <text x="180" y="16"><tspan fill="#67e8f9" font-weight="700">7</tspan> npm packages published</text>
       <text x="410" y="16"><tspan fill="#67e8f9" font-weight="700">Strapi</tspan> Partner</text>
     </g>
 
