@@ -1,15 +1,15 @@
 <!-- ====================== ANIMATED BANNER (auto dark/light) ====================== -->
 <a href="https://github.com/alievdavlat">
   <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/banner-light.svg?v=6"/>
-    <img width="100%" alt="Davlatbek Aliev — Full-Stack Software Engineer" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/banner.svg?v=6"/>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/banner-light.svg?v=7"/>
+    <img width="100%" alt="Davlatbek Aliev, Full-Stack Software Engineer" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/banner.svg?v=7"/>
   </picture>
 </a>
 
 <!-- ====================== TYPING + SOCIAL ====================== -->
 <div align="center">
   <a href="https://github.com/alievdavlat">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3200&pause=900&color=22D3EE&center=true&vCenter=true&width=640&lines=Full-Stack+Software+Engineer;React+%E2%80%A2+Next.js+%E2%80%A2+TypeScript+%E2%80%A2+Node.js;NestJS+%E2%80%A2+Strapi+%E2%80%A2+Docker+%E2%80%A2+CI%2FCD;I+build+CRMs%2C+dashboards+and+side+projects" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3200&pause=900&color=22D3EE&center=true&vCenter=true&width=640&lines=Full-Stack+Software+Engineer;React+%E2%80%A2+Next.js+%E2%80%A2+TypeScript+%E2%80%A2+Node.js;Strapi+%E2%80%A2+Docker+%E2%80%A2+CI%2FCD;I+build+CRMs%2C+dashboards+and+side+projects" alt="Typing SVG" />
   </a>
   <br/><br/>
   <a href="https://www.linkedin.com/in/davlatbek-aliev-624943371/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
@@ -26,27 +26,33 @@
 <table>
   <tr>
     <td width="320" valign="top" align="center">
-      <img width="290" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/lanyard.svg?v=3" alt="Developer ID badge"/>
+      <img width="290" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/lanyard.svg?v=4" alt="Developer ID badge"/>
     </td>
     <td valign="top">
-      <h2>👋 About me</h2>
+      <h2>About me</h2>
       <p>
-      I'm a full-stack web developer in Tashkent. I've been doing this professionally since late 2023,
-      and right now I'm at <b>NewProWeb</b>, mostly building CRMs and company websites with React,
-      Next.js, Node and Strapi. That kind of work is also where I got into React Native.
+      I'm a full-stack developer in Tashkent, working professionally since late 2023. Right now I'm at
+      <b>NewProWeb</b>, on a Strapi and Next.js platform for a German postal operator, where I own the
+      mail-redirection order flow and the module business customers use to submit letter jobs.
       </p>
       <p>
-      Most of what's on this profile is side projects. I learn best by rebuilding things I already use,
-      so there's a Notion clone, a code snippet manager and a YouTube-style app in here. A few aren't
-      finished — the honest reason is that work usually has me on other things, so the side stuff gets
-      picked up and put down between deadlines.
+      Most of what I've published started as something that got in my way there.
+      <b>translate-shield</b> came out of Chrome's translator unmounting React apps: it doesn't edit your
+      text node, it builds a new one and detaches yours. I measured that across the real translation
+      engines before writing the fix, then shipped it into the codebase that had the problem. The Strapi
+      plugins are the same story, an editor, a security plugin, encrypted backups.
       </p>
       <p>
-      Lately I'm spending more time on the <b>backend and the ops side</b> — NestJS, Docker, Nginx and a
-      bit of Grafana — because I got tired of building something and then waiting on someone else to ship it.
+      The rest of this profile is side projects, and a few aren't finished. The honest reason is that work
+      usually has me on other things, so the side stuff gets picked up and put down between deadlines.
       </p>
       <p>
-      🌐 Uzbek (native) · Russian · fluent English &nbsp;·&nbsp; 💬 Telegram is the fastest way to reach me.
+      Lately more of my time goes to the backend and the ops side, Docker, Nginx and a Prometheus stack I
+      set up to watch our client sites, because I got tired of building something and then waiting on
+      someone else to ship it.
+      </p>
+      <p>
+      Uzbek (native) &middot; Russian &middot; English &nbsp;&middot;&nbsp; Telegram is the fastest way to reach me.
       </p>
     </td>
   </tr>
@@ -73,7 +79,7 @@
   </tr>
   <tr>
     <td align="right"><b>Backend</b></td>
-    <td><img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,graphql,strapi,socketio&theme=dark" alt="backend"/></td>
+    <td><img src="https://skillicons.dev/icons?i=nodejs,express,graphql,strapi,socketio&theme=dark" alt="backend"/></td>
   </tr>
   <tr>
     <td align="right"><b>Databases</b></td>
@@ -86,17 +92,9 @@
 </table>
 </div>
 
-<!-- tech orbit + skill bars -->
-<table>
-  <tr>
-    <td width="42%" align="center" valign="middle">
-      <img width="330" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/tech-orbit.svg?v=1" alt="Tech stack in orbit"/>
-    </td>
-    <td align="center" valign="middle">
-      <img width="500" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/skill-bars.svg?v=1" alt="Skill proficiency"/>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img width="380" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/tech-orbit.svg?v=1" alt="Tech stack in orbit"/>
+</div>
 
 <br/>
 
@@ -137,7 +135,7 @@
 
 <table>
   <tr>
-    <td width="50%"><a href="https://github.com/alievdavlat/Enterprise"><img width="100%" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/p1.svg?v=1" alt="Enterprise — headless CMS"/></a></td>
+    <td width="50%"><a href="https://github.com/alievdavlat/Enterprise"><img width="100%" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/p1.svg?v=1" alt="Enterprise, headless CMS"/></a></td>
     <td width="50%"><a href="https://github.com/alievdavlat/notion-clone"><img width="100%" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/p2.svg?v=1" alt="Notion Clone"/></a></td>
   </tr>
   <tr>
@@ -168,7 +166,7 @@
 
 <!-- ====================== FOOTER ====================== -->
 <div align="center">
-  <sub>Most of my projects are open — feel free to dig through the code. If you want to talk shop, I'm on Telegram.</sub>
+  <sub>Most of my projects are open, so feel free to dig through the code. If you want to talk shop, I'm on Telegram.</sub>
   <br/><br/>
   <a href="https://t.me/alievv_15"><img src="https://img.shields.io/badge/Message%20me%20on%20Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="message me"/></a>
 </div>
