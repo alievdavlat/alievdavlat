@@ -1,8 +1,8 @@
 <!-- ====================== ANIMATED BANNER (auto dark/light) ====================== -->
 <a href="https://github.com/alievdavlat">
   <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/banner-light.svg?v=10"/>
-    <img width="100%" alt="Davlatbek Aliev, Full-Stack Software Engineer" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/banner.svg?v=10"/>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/banner-light-2.svg"/>
+    <img width="100%" alt="Davlatbek Aliev, Full-Stack Software Engineer" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/banner-2.svg"/>
   </picture>
 </a>
 
@@ -26,7 +26,7 @@
 <table>
   <tr>
     <td width="320" valign="top" align="center">
-      <img width="290" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/lanyard.svg?v=4" alt="Developer ID badge"/>
+      <img width="290" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/lanyard-2.svg" alt="Developer ID badge"/>
     </td>
     <td valign="top">
       <h2>About me</h2>
@@ -144,7 +144,7 @@
   </tr>
   <tr>
     <td width="50%"><a href="https://github.com/alievdavlat/code-snippets"><img width="100%" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/p5.svg?v=1" alt="Code Snippets"/></a></td>
-    <td width="50%"><a href="https://github.com/alievdavlat/translate-shield"><img width="100%" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/p6.svg?v=2" alt="translate-shield"/></a></td>
+    <td width="50%"><a href="https://github.com/alievdavlat/translate-shield"><img width="100%" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/p6-shield.svg" alt="translate-shield"/></a></td>
   </tr>
 </table>
 
