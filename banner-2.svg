@@ -1,0 +1,276 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 1280 720" width="1280" height="720" fill="none" role="img"
+     aria-label="Davlatbek Aliev, Full-Stack Engineer animated banner">
+  <title>Davlatbek Aliev, Full-Stack Engineer</title>
+
+  <!-- ============================= DEFS ============================= -->
+  <defs>
+    <!-- rounded-corner clip for the whole banner -->
+    <clipPath id="round"><rect x="8" y="8" width="1264" height="704" rx="26"/></clipPath>
+
+    <!-- background gradient (near-black navy) -->
+    <radialGradient id="bg" cx="28%" cy="18%" r="120%">
+      <stop offset="0%"  stop-color="#101a30"/>
+      <stop offset="45%" stop-color="#0a0f1e"/>
+      <stop offset="100%" stop-color="#060911"/>
+    </radialGradient>
+
+    <!-- cyan -> electric blue gradient for the name (flowing) -->
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#67e8f9">
+        <animate attributeName="stop-color" values="#67e8f9;#38bdf8;#3b82f6;#67e8f9" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="55%" stop-color="#22d3ee">
+        <animate attributeName="stop-color" values="#22d3ee;#3b82f6;#60a5fa;#22d3ee" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#2563eb">
+        <animate attributeName="stop-color" values="#2563eb;#22d3ee;#38bdf8;#2563eb" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="pill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e2233"/>
+      <stop offset="100%" stop-color="#0a1626"/>
+    </linearGradient>
+
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="42%" stop-color="#67e8f9"/>
+      <stop offset="52%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+    </linearGradient>
+    <!-- scanner beam -->
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#67e8f9" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="pglow" x="-35%" y="-35%" width="170%" height="170%"><feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#22d3ee" flood-opacity="0.45"/></filter>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="aura" cx="50%" cy="44%" r="56%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity=".62"/>
+      <stop offset="55%" stop-color="#1b6fb0" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .mono { font-family: 'Cascadia Code','Fira Code','JetBrains Mono','Consolas',monospace; }
+      .sans { font-family: 'Segoe UI','Trebuchet MS','Helvetica Neue',Arial,sans-serif; }
+
+      @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+      .cursor { animation: blink 1s step-end infinite; }
+
+      @keyframes pop {
+        0%   { opacity:0; transform: translateY(16px) scale(.7); }
+        60%  { opacity:1; transform: translateY(-3px) scale(1.06); }
+        100% { opacity:1; transform: translateY(0) scale(1); }
+      }
+      .ltr { opacity:0; transform-box: fill-box; transform-origin: center bottom;
+             animation: pop .55s cubic-bezier(.2,.8,.2,1) forwards; }
+
+      @keyframes fadeUp { from{opacity:0} to{opacity:1} }
+      .up { opacity:0; animation: fadeUp .7s ease-out forwards; }
+
+      @keyframes rolecycle { 0%{opacity:0} 4%{opacity:1} 28%{opacity:1} 33%{opacity:0} 100%{opacity:0} }
+      .role { opacity:0; animation: rolecycle 9s ease-in-out infinite; }
+
+      @keyframes flick {
+        0%,18%,22%,25%,53%,57%,100% { opacity:1; }
+        20%,24%,55% { opacity:.25; }
+      }
+      .neon { animation: flick 4.5s linear infinite; }
+
+      @keyframes scan { 0%{transform:translateY(-24px)} 100%{transform:translateY(362px)} }
+      @keyframes floaty2 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-11px)} }
+      .floatp{ animation: floaty2 5s ease-in-out infinite; }
+      @keyframes aurap { 0%,100%{opacity:.42} 50%{opacity:.72} }
+      .aura{ animation: aurap 4s ease-in-out infinite; }
+      @keyframes grndp { 0%,100%{opacity:.5; transform:scaleX(1)} 50%{opacity:.3; transform:scaleX(.86)} }
+      .grnd{ transform-box: fill-box; transform-origin: center; animation: grndp 5s ease-in-out infinite; }
+      @keyframes holo { 0%{clip-path: inset(0 0 100% 0); opacity:.12} 25%{opacity:1} 100%{clip-path: inset(0 0 0 0); opacity:1} }
+      .holo{ transform-box: fill-box; animation: holo 1.8s ease-out both; }
+      .beam { animation: scan 3.5s ease-in-out infinite alternate; }
+
+      @keyframes floaty { 0%{transform:translateY(0);opacity:.0} 20%{opacity:.9} 80%{opacity:.6} 100%{transform:translateY(-46px);opacity:0} }
+      .dot { animation: floaty 6s ease-in infinite; }
+
+      @keyframes tw { 0%,100%{opacity:.15; transform:scale(.6)} 50%{opacity:1; transform:scale(1)} }
+      .spark { transform-box: fill-box; transform-origin:center; animation: tw 2.6s ease-in-out infinite; }
+      /* --- extra FX --- */
+      @keyframes type { from{clip-path: inset(0 100% 0 0)} to{clip-path: inset(0 0 0 0)} }
+      .type{ opacity:0; clip-path: inset(0 100% 0 0); animation: fadeUp .35s ease-out forwards, type .7s steps(24,end) forwards; }
+      @keyframes glitch { 0%,88%,100%{transform:translate(0,0)} 89%{transform:translate(-3px,1px)} 91%{transform:translate(3px,-1px)} 93%{transform:translate(-2px,0)} 95%{transform:translate(2px,-1px)} 97%{transform:translate(-1px,1px)} }
+      .glitch{ animation: glitch 5.5s infinite; }
+      @keyframes rain { 0%{transform:translateY(-140px);opacity:0} 12%{opacity:.6} 88%{opacity:.4} 100%{transform:translateY(780px);opacity:0} }
+      .rain{ animation-name: rain; animation-timing-function: linear; animation-iteration-count: infinite; }
+      @keyframes eq { 0%,100%{transform:scaleY(.22)} 50%{transform:scaleY(1)} }
+      .bar{ transform-box: fill-box; transform-origin: center bottom; animation-name: eq; animation-timing-function: ease-in-out; animation-iteration-count: infinite; }
+      @keyframes flowdash { to{ stroke-dashoffset: -3928 } }
+    </style>
+  </defs>
+
+  <!-- ============================= BODY ============================= -->
+  <g clip-path="url(#round)">
+    <rect x="8" y="8" width="1264" height="704" fill="url(#bg)"/>
+
+    <!-- matrix code rain -->
+    <g>
+      <g class="rain" style="animation-duration:8.1s;animation-delay:-0.2s" fill="#22d3ee" opacity="0.09" font-size="14" font-family="monospace"><text x="70" y="0">0</text><text x="70" y="20">0</text><text x="70" y="40">0</text><text x="70" y="60">1</text><text x="70" y="80">0</text><text x="70" y="100">0</text><text x="70" y="120">0</text><text x="70" y="140">0</text><text x="70" y="160">0</text><text x="70" y="180">0</text><text x="70" y="200">0</text><text x="70" y="220">1</text><text x="70" y="240">0</text><text x="70" y="260">1</text><text x="70" y="280">1</text><text x="70" y="300">0</text><text x="70" y="320">0</text><text x="70" y="340">1</text><text x="70" y="360">1</text><text x="70" y="380">1</text><text x="70" y="400">0</text><text x="70" y="420">0</text><text x="70" y="440">1</text><text x="70" y="460">0</text><text x="70" y="480">0</text><text x="70" y="500">1</text></g>
+      <g class="rain" style="animation-duration:5.9s;animation-delay:-5.0s" fill="#22d3ee" opacity="0.12" font-size="13" font-family="monospace"><text x="188" y="0">1</text><text x="188" y="20">0</text><text x="188" y="40">1</text><text x="188" y="60">0</text><text x="188" y="80">1</text><text x="188" y="100">1</text><text x="188" y="120">0</text><text x="188" y="140">0</text><text x="188" y="160">0</text><text x="188" y="180">0</text><text x="188" y="200">1</text><text x="188" y="220">0</text><text x="188" y="240">0</text><text x="188" y="260">0</text><text x="188" y="280">1</text><text x="188" y="300">1</text><text x="188" y="320">1</text><text x="188" y="340">1</text><text x="188" y="360">0</text><text x="188" y="380">1</text><text x="188" y="400">1</text><text x="188" y="420">0</text><text x="188" y="440">1</text><text x="188" y="460">0</text><text x="188" y="480">0</text><text x="188" y="500">0</text></g>
+      <g class="rain" style="animation-duration:6.2s;animation-delay:-2.4s" fill="#22d3ee" opacity="0.15" font-size="14" font-family="monospace"><text x="306" y="0">1</text><text x="306" y="20">0</text><text x="306" y="40">0</text><text x="306" y="60">0</text><text x="306" y="80">1</text><text x="306" y="100">1</text><text x="306" y="120">1</text><text x="306" y="140">0</text><text x="306" y="160">0</text><text x="306" y="180">1</text><text x="306" y="200">0</text><text x="306" y="220">1</text><text x="306" y="240">1</text><text x="306" y="260">1</text><text x="306" y="280">0</text><text x="306" y="300">1</text><text x="306" y="320">0</text><text x="306" y="340">0</text><text x="306" y="360">1</text><text x="306" y="380">1</text><text x="306" y="400">1</text><text x="306" y="420">1</text><text x="306" y="440">0</text><text x="306" y="460">0</text><text x="306" y="480">1</text><text x="306" y="500">0</text></g>
+      <g class="rain" style="animation-duration:8.5s;animation-delay:-7.3s" fill="#22d3ee" opacity="0.08" font-size="14" font-family="monospace"><text x="424" y="0">1</text><text x="424" y="20">0</text><text x="424" y="40">1</text><text x="424" y="60">1</text><text x="424" y="80">1</text><text x="424" y="100">1</text><text x="424" y="120">0</text><text x="424" y="140">0</text><text x="424" y="160">1</text><text x="424" y="180">1</text><text x="424" y="200">0</text><text x="424" y="220">1</text><text x="424" y="240">1</text><text x="424" y="260">0</text><text x="424" y="280">1</text><text x="424" y="300">0</text><text x="424" y="320">1</text><text x="424" y="340">0</text><text x="424" y="360">0</text><text x="424" y="380">1</text><text x="424" y="400">0</text><text x="424" y="420">0</text><text x="424" y="440">1</text><text x="424" y="460">0</text><text x="424" y="480">0</text><text x="424" y="500">1</text></g>
+      <g class="rain" style="animation-duration:7.5s;animation-delay:-0.8s" fill="#22d3ee" opacity="0.1" font-size="15" font-family="monospace"><text x="542" y="0">0</text><text x="542" y="20">0</text><text x="542" y="40">0</text><text x="542" y="60">0</text><text x="542" y="80">0</text><text x="542" y="100">1</text><text x="542" y="120">0</text><text x="542" y="140">0</text><text x="542" y="160">0</text><text x="542" y="180">1</text><text x="542" y="200">0</text><text x="542" y="220">1</text><text x="542" y="240">1</text><text x="542" y="260">0</text><text x="542" y="280">0</text><text x="542" y="300">1</text><text x="542" y="320">1</text><text x="542" y="340">1</text><text x="542" y="360">1</text><text x="542" y="380">1</text><text x="542" y="400">0</text><text x="542" y="420">0</text><text x="542" y="440">0</text><text x="542" y="460">0</text><text x="542" y="480">1</text><text x="542" y="500">0</text></g>
+      <g class="rain" style="animation-duration:7.9s;animation-delay:-1.8s" fill="#22d3ee" opacity="0.09" font-size="13" font-family="monospace"><text x="660" y="0">0</text><text x="660" y="20">0</text><text x="660" y="40">0</text><text x="660" y="60">0</text><text x="660" y="80">1</text><text x="660" y="100">0</text><text x="660" y="120">0</text><text x="660" y="140">1</text><text x="660" y="160">1</text><text x="660" y="180">0</text><text x="660" y="200">0</text><text x="660" y="220">1</text><text x="660" y="240">0</text><text x="660" y="260">1</text><text x="660" y="280">1</text><text x="660" y="300">0</text><text x="660" y="320">0</text><text x="660" y="340">0</text><text x="660" y="360">1</text><text x="660" y="380">1</text><text x="660" y="400">1</text><text x="660" y="420">1</text><text x="660" y="440">1</text><text x="660" y="460">0</text><text x="660" y="480">0</text><text x="660" y="500">0</text></g>
+      <g class="rain" style="animation-duration:7.1s;animation-delay:-2.4s" fill="#22d3ee" opacity="0.14" font-size="14" font-family="monospace"><text x="778" y="0">0</text><text x="778" y="20">0</text><text x="778" y="40">1</text><text x="778" y="60">0</text><text x="778" y="80">1</text><text x="778" y="100">0</text><text x="778" y="120">1</text><text x="778" y="140">1</text><text x="778" y="160">0</text><text x="778" y="180">0</text><text x="778" y="200">1</text><text x="778" y="220">0</text><text x="778" y="240">0</text><text x="778" y="260">0</text><text x="778" y="280">0</text><text x="778" y="300">0</text><text x="778" y="320">0</text><text x="778" y="340">1</text><text x="778" y="360">1</text><text x="778" y="380">1</text><text x="778" y="400">0</text><text x="778" y="420">1</text><text x="778" y="440">0</text><text x="778" y="460">0</text><text x="778" y="480">1</text><text x="778" y="500">0</text></g>
+      <g class="rain" style="animation-duration:9.4s;animation-delay:-2.5s" fill="#22d3ee" opacity="0.13" font-size="16" font-family="monospace"><text x="896" y="0">1</text><text x="896" y="20">1</text><text x="896" y="40">1</text><text x="896" y="60">0</text><text x="896" y="80">0</text><text x="896" y="100">1</text><text x="896" y="120">0</text><text x="896" y="140">0</text><text x="896" y="160">0</text><text x="896" y="180">1</text><text x="896" y="200">0</text><text x="896" y="220">0</text><text x="896" y="240">1</text><text x="896" y="260">0</text><text x="896" y="280">0</text><text x="896" y="300">0</text><text x="896" y="320">0</text><text x="896" y="340">0</text><text x="896" y="360">0</text><text x="896" y="380">0</text><text x="896" y="400">1</text><text x="896" y="420">0</text><text x="896" y="440">0</text><text x="896" y="460">0</text><text x="896" y="480">0</text><text x="896" y="500">1</text></g>
+      <g class="rain" style="animation-duration:8.1s;animation-delay:-4.6s" fill="#22d3ee" opacity="0.1" font-size="15" font-family="monospace"><text x="1014" y="0">0</text><text x="1014" y="20">1</text><text x="1014" y="40">0</text><text x="1014" y="60">1</text><text x="1014" y="80">1</text><text x="1014" y="100">0</text><text x="1014" y="120">1</text><text x="1014" y="140">1</text><text x="1014" y="160">1</text><text x="1014" y="180">0</text><text x="1014" y="200">0</text><text x="1014" y="220">1</text><text x="1014" y="240">0</text><text x="1014" y="260">0</text><text x="1014" y="280">0</text><text x="1014" y="300">1</text><text x="1014" y="320">0</text><text x="1014" y="340">1</text><text x="1014" y="360">0</text><text x="1014" y="380">0</text><text x="1014" y="400">1</text><text x="1014" y="420">1</text><text x="1014" y="440">0</text><text x="1014" y="460">1</text><text x="1014" y="480">1</text><text x="1014" y="500">0</text></g>
+      <g class="rain" style="animation-duration:8.2s;animation-delay:-4.5s" fill="#22d3ee" opacity="0.14" font-size="13" font-family="monospace"><text x="1132" y="0">0</text><text x="1132" y="20">1</text><text x="1132" y="40">0</text><text x="1132" y="60">0</text><text x="1132" y="80">0</text><text x="1132" y="100">1</text><text x="1132" y="120">1</text><text x="1132" y="140">0</text><text x="1132" y="160">1</text><text x="1132" y="180">0</text><text x="1132" y="200">1</text><text x="1132" y="220">1</text><text x="1132" y="240">1</text><text x="1132" y="260">0</text><text x="1132" y="280">0</text><text x="1132" y="300">1</text><text x="1132" y="320">1</text><text x="1132" y="340">0</text><text x="1132" y="360">0</text><text x="1132" y="380">1</text><text x="1132" y="400">0</text><text x="1132" y="420">1</text><text x="1132" y="440">0</text><text x="1132" y="460">1</text><text x="1132" y="480">1</text><text x="1132" y="500">0</text></g>
+    </g>
+
+    <!-- floating particles -->
+    <g fill="#22d3ee">
+      <circle class="dot" cx="120" cy="620" r="2.5" style="animation-delay:0s"/>
+      <circle class="dot" cx="260" cy="660" r="2"   style="animation-delay:1.4s"/>
+      <circle class="dot" cx="470" cy="640" r="2.5" style="animation-delay:2.6s"/>
+      <circle class="dot" cx="590" cy="670" r="2"   style="animation-delay:3.5s"/>
+      <circle class="dot" cx="900" cy="650" r="2.5" style="animation-delay:0.8s"/>
+      <circle class="dot" cx="1080" cy="665" r="2"  style="animation-delay:2.1s"/>
+    </g>
+    <g fill="#67e8f9">
+      <path class="spark" d="M1150 120 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z" style="animation-delay:.2s"/>
+      <path class="spark" d="M1040 300 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5z" style="animation-delay:1.3s"/>
+      <path class="spark" d="M700 150 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z" style="animation-delay:2s"/>
+    </g>
+
+    <!-- ===================== LEFT COLUMN ===================== -->
+    <!-- terminal prompt -->
+    <text x="70" y="86" class="mono up" style="animation-delay:.1s" font-size="19" fill="#7b8aa6">
+      <tspan fill="#22d3ee">davlatbek@dev</tspan>:<tspan fill="#3b82f6">~</tspan>$ cat README.md
+      <tspan class="cursor" fill="#67e8f9">▋</tspan>
+    </text>
+
+    <text x="70" y="140" class="sans up" style="animation-delay:.25s" font-size="26" font-weight="600" fill="#cbd5e1">Hi, I'm 👋</text>
+
+    <!-- name, letter by letter -->
+    <g class="glitch">
+    <g class="sans" font-size="82" font-weight="800" fill="url(#name)" filter="url(#softglow)" letter-spacing="1">
+      <text x="70"  y="232" class="ltr" style="animation-delay:.55s">D</text>
+      <text x="126" y="232" class="ltr" style="animation-delay:.60s">a</text>
+      <text x="176" y="232" class="ltr" style="animation-delay:.65s">v</text>
+      <text x="224" y="232" class="ltr" style="animation-delay:.70s">l</text>
+      <text x="248" y="232" class="ltr" style="animation-delay:.75s">a</text>
+      <text x="298" y="232" class="ltr" style="animation-delay:.80s">t</text>
+      <text x="332" y="232" class="ltr" style="animation-delay:.85s">b</text>
+      <text x="386" y="232" class="ltr" style="animation-delay:.90s">e</text>
+      <text x="436" y="232" class="ltr" style="animation-delay:.95s">k</text>
+    </g>
+    <g class="sans" font-size="60" font-weight="800" fill="url(#name)" filter="url(#glow)" letter-spacing="1">
+      <text x="70"  y="308" class="ltr" style="animation-delay:1.05s">A</text>
+      <text x="112" y="308" class="ltr" style="animation-delay:1.10s">l</text>
+      <text x="130" y="308" class="ltr" style="animation-delay:1.15s">i</text>
+      <text x="148" y="308" class="ltr" style="animation-delay:1.20s">e</text>
+      <text x="184" y="308" class="ltr" style="animation-delay:1.25s">v</text>
+      <text x="228" y="300" class="ltr" style="animation-delay:1.35s" font-size="44" fill="#22d3ee" filter="url(#softglow)">&lt;/&gt;</text>
+    </g>
+    </g>
+
+    <!-- cycling role titles -->
+    <g class="mono" font-size="24" font-weight="600" transform="translate(72,360)">
+      <text class="role" style="animation-delay:0s"   fill="#67e8f9">&#9656; Full-Stack Software Engineer</text>
+      <text class="role" style="animation-delay:3s"   fill="#38bdf8">&#9656; React · Next.js · Node.js · Strapi</text>
+      <text class="role" style="animation-delay:6s"   fill="#60a5fa">&#9656; DevOps · Docker · CI/CD · Nginx</text>
+    </g>
+
+    <!-- quote box -->
+    <g class="up" style="animation-delay:1.5s" transform="translate(72,388)">
+      <rect width="470" height="76" rx="12" fill="url(#pill)" stroke="#1c3350"/>
+      <rect width="4" height="76" rx="2" fill="url(#edge)"/>
+      <text x="24" y="34" class="mono" font-size="18" fill="#cbd5e1">I'd rather ship my own work</text>
+      <text x="24" y="60" class="mono" font-size="18" fill="#22d3ee">than <tspan fill="#cbd5e1">hand</tspan> it off.</text>
+    </g>
+
+    <!-- tech pills -->
+    <g class="mono" font-size="15" font-weight="600" transform="translate(72,490)">
+      <g class="up" style="animation-delay:1.7s"><rect width="108" height="34" rx="17" fill="url(#pill)" stroke="#22d3ee" stroke-opacity=".55"/><text x="54" y="22" text-anchor="middle" fill="#67e8f9">TypeScript</text></g>
+      <g class="up" style="animation-delay:1.8s" transform="translate(118,0)"><rect width="76" height="34" rx="17" fill="url(#pill)" stroke="#38bdf8" stroke-opacity=".55"/><text x="38" y="22" text-anchor="middle" fill="#67e8f9">React</text></g>
+      <g class="up" style="animation-delay:1.9s" transform="translate(204,0)"><rect width="86" height="34" rx="17" fill="url(#pill)" stroke="#3b82f6" stroke-opacity=".55"/><text x="43" y="22" text-anchor="middle" fill="#67e8f9">Next.js</text></g>
+      <g class="up" style="animation-delay:2.0s" transform="translate(300,0)"><rect width="88" height="34" rx="17" fill="url(#pill)" stroke="#22d3ee" stroke-opacity=".55"/><text x="44" y="22" text-anchor="middle" fill="#67e8f9">Node.js</text></g>
+      <g class="up" style="animation-delay:2.1s" transform="translate(0,44)"><rect width="80" height="34" rx="17" fill="url(#pill)" stroke="#38bdf8" stroke-opacity=".55"/><text x="40" y="22" text-anchor="middle" fill="#67e8f9">PostgreSQL</text></g>
+      <g class="up" style="animation-delay:2.2s" transform="translate(90,44)"><rect width="78" height="34" rx="17" fill="url(#pill)" stroke="#3b82f6" stroke-opacity=".55"/><text x="39" y="22" text-anchor="middle" fill="#67e8f9">Docker</text></g>
+      <g class="up" style="animation-delay:2.3s" transform="translate(178,44)"><rect width="82" height="34" rx="17" fill="url(#pill)" stroke="#22d3ee" stroke-opacity=".55"/><text x="41" y="22" text-anchor="middle" fill="#67e8f9">Strapi</text></g>
+    </g>
+
+    <!-- about line + stat bar -->
+    <text x="72" y="622" class="mono up" style="animation-delay:2.4s" font-size="16" fill="#7b8aa6">
+      <tspan fill="#22d3ee">&gt;_</tspan> I build CRMs, dashboards &amp; side projects, from UI to deploy.
+    </text>
+    <g class="mono up" style="animation-delay:2.55s" font-size="15" fill="#8aa0bd" transform="translate(72,650)">
+      <text x="0" y="16"><tspan fill="#67e8f9" font-weight="700">2.5 yrs</tspan> in production</text>
+      <text x="180" y="16"><tspan fill="#67e8f9" font-weight="700">7</tspan> npm packages published</text>
+      <text x="410" y="16"><tspan fill="#67e8f9" font-weight="700">2</tspan> of them at work</text>
+    </g>
+
+    <!-- ===================== RIGHT COLUMN ===================== -->
+    <!-- code editor card -->
+    <g transform="translate(610,72)" class="up" style="animation-delay:.9s">
+      <rect width="410" height="248" rx="14" fill="#0b1220" stroke="#1c3350"/>
+      <rect width="410" height="38" rx="14" fill="#0e1830"/>
+      <rect y="24" width="410" height="14" fill="#0e1830"/>
+      <circle cx="24" cy="19" r="6" fill="#ff5f56"/><circle cx="46" cy="19" r="6" fill="#ffbd2e"/><circle cx="68" cy="19" r="6" fill="#27c93f"/>
+      <text x="205" y="24" text-anchor="middle" class="mono" font-size="14" fill="#7b8aa6">buildDreams.tsx</text>
+      <g class="mono" font-size="16">
+        <text x="26" y="78"  class="type" style="animation-delay:1.2s" fill="#c792ea">function <tspan fill="#82aaff">buildDreams</tspan><tspan fill="#89ddff">()</tspan> {</text>
+        <text x="52" y="106" class="type" style="animation-delay:1.5s" fill="#c792ea">return <tspan fill="#89ddff">(</tspan></text>
+        <text x="78" y="134" class="type" style="animation-delay:1.8s" fill="#89ddff">&lt;<tspan fill="#22d3ee">Ship</tspan> <tspan fill="#c3e88d">clean</tspan>=<tspan fill="#ecc48d">"true"</tspan>&gt;</text>
+        <text x="104" y="162" class="type" style="animation-delay:2.1s" fill="#89ddff">&lt;<tspan fill="#22d3ee">Code</tspan>/&gt; &lt;<tspan fill="#22d3ee">Learn</tspan>/&gt; &lt;<tspan fill="#22d3ee">Deploy</tspan>/&gt;</text>
+        <text x="104" y="190" class="type" style="animation-delay:2.4s" fill="#89ddff">&lt;<tspan fill="#22d3ee">Repeat</tspan>/&gt;</text>
+        <text x="78" y="218" class="type" style="animation-delay:2.7s" fill="#89ddff">&lt;/<tspan fill="#22d3ee">Ship</tspan>&gt;<tspan class="cursor" fill="#67e8f9">▋</tspan></text>
+      </g>
+    </g>
+
+    <!-- neon sign -->
+    <g transform="translate(610,338)">
+      <rect width="248" height="86" rx="14" fill="#0b1220" stroke="#22d3ee" stroke-opacity=".5" class="neon" filter="url(#softglow)"/>
+      <text x="124" y="38" text-anchor="middle" class="mono neon" font-size="20" font-weight="800" fill="#67e8f9" filter="url(#glow)">KEEP CODING</text>
+      <text x="124" y="66" text-anchor="middle" class="mono neon" font-size="20" font-weight="800" fill="#38bdf8" filter="url(#glow)" style="animation-delay:.4s">KEEP GROWING</text>
+    </g>
+
+    <!-- equalizer bars -->
+    <g opacity="0.9">
+      <rect class="bar" x="612" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.09s;animation-delay:-0.18s"/>
+      <rect class="bar" x="628" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.29s;animation-delay:-0.09s"/>
+      <rect class="bar" x="644" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.22s;animation-delay:-0.44s"/>
+      <rect class="bar" x="660" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:0.93s;animation-delay:-0.61s"/>
+      <rect class="bar" x="676" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:0.92s;animation-delay:-0.52s"/>
+      <rect class="bar" x="692" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:0.94s;animation-delay:-0.11s"/>
+      <rect class="bar" x="708" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.15s;animation-delay:-0.99s"/>
+      <rect class="bar" x="724" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:0.97s;animation-delay:-0.27s"/>
+      <rect class="bar" x="740" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.28s;animation-delay:-1.14s"/>
+      <rect class="bar" x="756" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.25s;animation-delay:-0.48s"/>
+      <rect class="bar" x="772" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.49s;animation-delay:-0.06s"/>
+      <rect class="bar" x="788" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.42s;animation-delay:-0.35s"/>
+      <rect class="bar" x="804" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:0.99s;animation-delay:-0.14s"/>
+      <rect class="bar" x="820" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.09s;animation-delay:-0.98s"/>
+      <rect class="bar" x="836" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.01s;animation-delay:-0.7s"/>
+      <rect class="bar" x="852" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.28s;animation-delay:-0.45s"/>
+      <rect class="bar" x="868" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:1.23s;animation-delay:-0.08s"/>
+      <rect class="bar" x="884" y="650" width="8" height="44" rx="3" fill="url(#edge)" style="animation-duration:0.94s;animation-delay:-0.25s"/>
+    </g>
+
+    <!-- outer border glow -->
+    <rect x="9" y="9" width="1262" height="702" rx="25" fill="none" stroke="url(#edge)" stroke-opacity="0.25" stroke-width="2"/>
+    <rect x="9" y="9" width="1262" height="702" rx="25" fill="none" stroke="url(#flow)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="260 3670" style="animation: flowdash 6s linear infinite;"/>
+  </g>
+</svg>
