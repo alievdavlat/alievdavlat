@@ -1,8 +1,8 @@
 <!-- ====================== ANIMATED BANNER (auto dark/light) ====================== -->
 <a href="https://github.com/alievdavlat">
   <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/banner-light.svg?v=8"/>
-    <img width="100%" alt="Davlatbek Aliev, Full-Stack Software Engineer" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/banner.svg?v=8"/>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/banner-light.svg?v=9"/>
+    <img width="100%" alt="Davlatbek Aliev, Full-Stack Software Engineer" src="https://raw.githubusercontent.com/alievdavlat/alievdavlat/main/banner.svg?v=9"/>
   </picture>
 </a>
 
